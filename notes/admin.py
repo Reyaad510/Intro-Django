@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Note
+from .models import Note, PersonalNote
 
 
 # we do this because auto_now is read only
@@ -11,3 +11,4 @@ class NoteAdmin(admin.ModelAdmin):
 # Register your models here.
 # to add more just do admin.site.register(insertname)
 admin.site.register(Note, NoteAdmin)
+admin.site.register(PersonalNote, NoteAdmin)
